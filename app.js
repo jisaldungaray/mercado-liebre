@@ -28,5 +28,5 @@ app.post('/login', function(req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function(){
-    console.log('Servidor Corriendo en el puerto 3000')
+    console.log('Servidor Escuchando Spotify en el puerto 3000')
 });
