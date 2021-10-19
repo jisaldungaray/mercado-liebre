@@ -1,0 +1,347 @@
+/*Estilos Generales*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------- BODY ------------- */
+body {
+    background-color: #ebebeb;
+}
+
+/*BIENVENID@*/
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #012964;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+/* --------- ESTILOS HEADER ----------*/
+
+div.top-header{
+    padding: 5%;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+header nav{
+    font-size: 12px;
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.resp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    width: 49%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #666;
+}
+
+div.input {
+    display: flex;
+    width: 100%;
+}
+
+div.input input {
+    border: none;
+    width: 90%;
+}
+
+div.input button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+div.lupa i {
+    font-size: 17px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 15px;
+}
+
+
+
+/* ------------ ESTILOS FORMULARIO ------------- */
+
+div.main-login {
+    margin: 30px 36px;
+    padding: 90px 9px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+
+.main-login form p {
+    text-align: center;
+    padding: 5px;
+}
+
+div.main-login button {
+    background-color: #3582f5;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: none;
+}
+
+div.main-login button:hover {
+    background-color: #001463;
+    cursor: pointer;
+}
+
+div.main-login form p input {
+    height: 30px;
+}
+
+.fa-unlock, .fa-user {
+    font-size: 20px;
+    margin: 12px 7px;
+    color: #012964;
+}
+
+
+/* ---------- ESTILOS FOOTER ---------------*/
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+i.fa-credit-card, i.fa-gift, i.fa-user-shield {
+    color: #1259c3;
+    font-size: 2em;
+}
+
+footer article {
+    margin: 40px 0;
+    color: #666;
+}
+
+footer article div {
+    margin-bottom: 9px;
+}
+
+
+/*-------- MEDIA-QUERYS --------- */
+
+@media (min-width: 361px) {
+    .burger-menu {
+        display: block;
+    }
+
+    header nav {
+        display: none; 
+    }
+
+    main section article {
+        /*box-shadow: 0px 0px 10px rgb(100 ,100 ,100 );*/
+        width: 45%;
+    }
+}
+
+@media (min-width: 769px){
+    /*Header*/
+    div.top-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.resp-header {
+        width: 153%;
+    }
+
+    div.form {
+        margin-left: 5px;
+    }
+
+    header ul li a {
+        font-size: 15px;
+    }
+
+    header div.top-header p {
+        padding-top: 12px;
+        font-size: 16px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    header nav ul li a {
+        margin: 7px;
+    }
+
+    header nav ul li a i {
+        color: #0044AA;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    /*Formulario*/
+    div.main-login {
+
+    }
+}
+
+@media (min-width: 1024px){
+    /*Header*/
+    div.resp-header {
+        width: 183%;
+    }
+
+    header div.top-header p {
+        margin-top: 25px;
+        font-size: 19px;
+    }
+
+    header nav {
+        padding: 0px 16px;
+    }
+
+    header nav ul li a {
+        font-size: 17px;
+        margin-right: 9px;
+    }
+
+    /* ESTILOS FOOTER RESPONSIVE */
+
+    .cont-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cont-footer article {
+        width: 27%;
+    }
+
+    footer article div i:hover {
+        color: #5297ff;
+    }
+}
+
+@media (min-width: 1280px) {
+    /*Header*/
+    div.resp-header {
+        width: 230%;
+    }
+
+    header div.top-header p {
+        margin-top: 40px;
+        font-size: 20px;
+        margin-left: 13px;
+    }
+
+    header nav {
+        padding: 0px 35px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        margin-right: 19px;
+    }
+
+    header .form .input {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+    /*Header*/
+    header .form .submit {
+        width: 5%;
+    }
+
+    header div.top-header p {
+        margin-top: 43px;
+        font-size: 30px;
+    }
+
+    .fa-search {
+        padding: 5px 7px;
+    }
+
+    header nav {
+        padding: 0px 50px;
+    }
+
+    header nav ul li a {
+        font-size: 25spx;
+        margin-right: 33px;
+    }
+
+    div.input input {
+        font-size: 30px;
+    }
+
+    .fa-search {
+        font-size: 30px;
+    }
+
+    .fa-search:before {
+        font-size: 30px;
+    }
+}
